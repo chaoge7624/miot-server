@@ -22,7 +22,6 @@ import org.springblade.core.launch.constant.AppConstant;
 
 /**
  * admin启动器
- *
  * @author Chill
  */
 @EnableAdminServer
