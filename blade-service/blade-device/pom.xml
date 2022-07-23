@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>blade-service</artifactId>
+        <groupId>org.springblade</groupId>
+        <version>3.4.1</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <name>${project.artifactId}</name>
+    <version>3.4.1</version>
+    <packaging>pom</packaging>
+    <description>设备运维管理</description>
+    <artifactId>blade-device</artifactId>
+
+
+
+</project>

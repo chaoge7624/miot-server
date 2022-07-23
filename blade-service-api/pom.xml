@@ -17,6 +17,9 @@
 
     <modules>
         <module>blade-basics-api</module>
+        <module>blade-device-api</module>
+        <module>blade-external-api</module>
+        <module>blade-advanced-api</module>
     </modules>
 
     <dependencies>

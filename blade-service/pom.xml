@@ -18,6 +18,9 @@
 
     <modules>
         <module>blade-basics</module>
+        <module>blade-device</module>
+        <module>blade-external</module>
+        <module>blade-advanced</module>
     </modules>
 
     <dependencies>

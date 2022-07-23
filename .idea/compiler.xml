@@ -37,6 +37,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="SpringBlade" options="-parameters" />
       <module name="blade-admin" options="-parameters" />
+      <module name="blade-advanced" options="" />
+      <module name="blade-advanced-api" options="" />
       <module name="blade-auth" options="-parameters" />
       <module name="blade-basics" options="" />
       <module name="blade-basics-api" options="" />
@@ -46,7 +48,11 @@
       <module name="blade-desk" options="-parameters" />
       <module name="blade-desk-api" options="-parameters" />
       <module name="blade-develop" options="-parameters" />
+      <module name="blade-device" options="" />
+      <module name="blade-device-api" options="" />
       <module name="blade-dict-api" options="-parameters" />
+      <module name="blade-external" options="" />
+      <module name="blade-external-api" options="-parameters" />
       <module name="blade-gateway" options="-parameters" />
       <module name="blade-log" options="-parameters" />
       <module name="blade-ops" options="" />
@@ -55,7 +61,7 @@
       <module name="blade-scope-api" options="-parameters" />
       <module name="blade-seata-order" options="-parameters" />
       <module name="blade-seata-storage" options="-parameters" />
-      <module name="blade-service" options="-parameters" />
+      <module name="blade-service" options="" />
       <module name="blade-swagger" options="-parameters" />
       <module name="blade-system" options="-parameters" />
       <module name="blade-system-api" options="-parameters" />
