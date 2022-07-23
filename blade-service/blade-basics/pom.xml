@@ -14,5 +14,10 @@
     <packaging>pom</packaging>
     <description>基础功能</description>
 
+    <modules>
+        <module>blade-system</module>
+        <module>blade-user</module>
+        <module>blade-desk</module>
+    </modules>
 
 </project>

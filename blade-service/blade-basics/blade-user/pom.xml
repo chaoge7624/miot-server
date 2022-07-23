@@ -3,13 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>blade-service</artifactId>
         <groupId>org.springblade</groupId>
+        <artifactId>blade-basics</artifactId>
         <version>3.4.1</version>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>blade-system</artifactId>
+    <artifactId>blade-user</artifactId>
     <name>${project.artifactId}</name>
     <version>${blade.project.version}</version>
     <packaging>jar</packaging>
@@ -22,6 +23,11 @@
         </dependency>
         <dependency>
             <groupId>org.springblade</groupId>
+            <artifactId>blade-user-api</artifactId>
+            <version>${blade.project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springblade</groupId>
             <artifactId>blade-dict-api</artifactId>
             <version>${blade.project.version}</version>
         </dependency>
@@ -31,9 +37,9 @@
             <version>${blade.project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.springblade</groupId>
-            <artifactId>blade-user-api</artifactId>
-            <version>${blade.project.version}</version>
+            <groupId>com.alibaba</groupId>
+            <artifactId>easyexcel</artifactId>
+            <version>${easyexcel.version}</version>
         </dependency>
         <!--Zipkin-->
         <!--<dependency>
