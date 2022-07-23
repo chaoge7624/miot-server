@@ -23,6 +23,7 @@
         <module name="blade-dict-api" />
         <module name="blade-system-api" />
         <module name="blade-common" />
+        <module name="blade-task" />
         <module name="blade-swagger" />
       </profile>
     </annotationProcessing>
@@ -52,10 +53,10 @@
       <module name="blade-device-api" options="" />
       <module name="blade-dict-api" options="-parameters" />
       <module name="blade-external" options="" />
-      <module name="blade-external-api" options="-parameters" />
+      <module name="blade-external-api" options="" />
       <module name="blade-gateway" options="-parameters" />
       <module name="blade-log" options="-parameters" />
-      <module name="blade-ops" options="" />
+      <module name="blade-ops" options="-parameters" />
       <module name="blade-report" options="-parameters" />
       <module name="blade-resource" options="-parameters" />
       <module name="blade-scope-api" options="-parameters" />
@@ -65,6 +66,7 @@
       <module name="blade-swagger" options="-parameters" />
       <module name="blade-system" options="-parameters" />
       <module name="blade-system-api" options="-parameters" />
+      <module name="blade-task" options="-parameters" />
       <module name="blade-user" options="-parameters" />
       <module name="blade-user-api" options="-parameters" />
     </option>
