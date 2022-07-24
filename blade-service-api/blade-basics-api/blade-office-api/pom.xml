@@ -3,22 +3,16 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>blade-service</artifactId>
+        <artifactId>blade-basics-api</artifactId>
         <groupId>org.springblade</groupId>
         <version>3.4.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>blade-basics</artifactId>
-    <name>${project.artifactId}</name>
-    <version>3.4.1</version>
-    <packaging>pom</packaging>
-    <description>基础功能</description>
 
-    <modules>
-        <module>blade-system</module>
-        <module>blade-user</module>
-        <module>blade-desk</module>
-        <module>blade-office</module>
-    </modules>
+    <artifactId>blade-office-api</artifactId>
+    <name>${project.artifactId}</name>
+    <version>${blade.project.version}</version>
+    <packaging>jar</packaging>
+
 
 </project>

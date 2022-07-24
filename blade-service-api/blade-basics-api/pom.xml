@@ -20,6 +20,7 @@
         <module>blade-system-api</module>
         <module>blade-user-api</module>
         <module>blade-scope-api</module>
+        <module>blade-office-api</module>
     </modules>
 
 </project>

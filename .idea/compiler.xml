@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="blade-resource" />
         <module name="blade-auth" />
+        <module name="blade-office" />
         <module name="blade-user" />
         <module name="blade-admin" />
         <module name="blade-scope-api" />
@@ -25,6 +26,7 @@
         <module name="blade-common" />
         <module name="blade-task" />
         <module name="blade-swagger" />
+        <module name="blade-office-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -56,6 +58,8 @@
       <module name="blade-external-api" options="" />
       <module name="blade-gateway" options="-parameters" />
       <module name="blade-log" options="-parameters" />
+      <module name="blade-office" options="-parameters" />
+      <module name="blade-office-api" options="-parameters" />
       <module name="blade-ops" options="" />
       <module name="blade-report" options="-parameters" />
       <module name="blade-resource" options="-parameters" />
