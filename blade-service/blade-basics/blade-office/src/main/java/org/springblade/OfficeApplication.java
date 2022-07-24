@@ -10,6 +10,13 @@ import org.springblade.core.launch.BladeApplication;
 @BladeCloudApplication
 public class OfficeApplication {
 	public static void main(String[] args) {
+		// 告警
+		// 工单
+		// 楼层区域房间
+		// 访客
+		// 会议
+		// 文档管理
 		BladeApplication.run("blade-office", OfficeApplication.class, args);
 	}
 }
+
