@@ -7,11 +7,6 @@
 #### 二、软件架构
 软件架构说明
 
-![](https://csdn-pic-1301850093.cos.ap-guangzhou.myqcloud.com/csdn-pic/通用物联网平台 后端设计.png)
-
-
-
-
 
 
 
