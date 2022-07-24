@@ -62,7 +62,7 @@
       <module name="blade-scope-api" options="-parameters" />
       <module name="blade-seata-order" options="-parameters" />
       <module name="blade-seata-storage" options="-parameters" />
-      <module name="blade-service" options="-parameters" />
+      <module name="blade-service" options="" />
       <module name="blade-swagger" options="-parameters" />
       <module name="blade-system" options="-parameters" />
       <module name="blade-system-api" options="-parameters" />
