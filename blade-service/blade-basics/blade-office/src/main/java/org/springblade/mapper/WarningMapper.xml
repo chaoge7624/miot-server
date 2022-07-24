@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.springblade.mapper.WarningMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="warningResultMap" type="org.springblade.entity.Warning">
+        <id column="id" property="id"/>
+        <result column="create_user" property="createUser"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_user" property="updateUser"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="status" property="status"/>
+        <result column="is_deleted" property="isDeleted"/>
+        <result column="level" property="level"/>
+        <result column="type" property="type"/>
+        <result column="detail" property="detail"/>
+        <result column="recover_time" property="recoverTime"/>
+        <result column="is_work_order" property="isWorkOrder"/>
+        <result column="subsystem_type" property="subsystemType"/>
+        <result column="equipment_id" property="equipmentId"/>
+    </resultMap>
+
+
+    <select id="selectWarningPage" resultMap="warningResultMap">
+        select * from blade_warning where is_deleted = 0
+    </select>
+
+</mapper>
