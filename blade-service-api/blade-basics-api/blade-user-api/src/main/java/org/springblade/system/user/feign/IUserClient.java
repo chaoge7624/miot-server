@@ -39,6 +39,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 public interface IUserClient {
 
 	String API_PREFIX = "/user";
+	String USERLOGIN = API_PREFIX + "/userLogin";
+
+	/**
+	 * 用户登录校验
+	 * @param account
+	 * @param password
+	 * @return
+	 */
+	@PostMapping(USERLOGIN)
+	R userLogin(@RequestParam("account") String account, @RequestParam("password") String password);
 
 	/**
 	 * 获取用户信息

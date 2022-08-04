@@ -25,6 +25,7 @@ import org.springblade.system.user.entity.UserOauth;
 import org.springblade.system.user.excel.UserExcel;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * 服务类
@@ -39,6 +40,14 @@ public interface IUserService extends BaseService<User> {
 	 * @return
 	 */
 	boolean submit(User user);
+
+	/**
+	 * 用户登录
+	 * @param account
+	 * @param password
+	 * @return
+	 */
+	Map userLogin(String account, String password);
 
 	/**
 	 * 自定义分页

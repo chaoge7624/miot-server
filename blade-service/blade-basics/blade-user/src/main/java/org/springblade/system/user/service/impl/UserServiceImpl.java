@@ -37,9 +37,7 @@ import org.springblade.system.user.service.IUserService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Collections;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
 /**
  * 服务实现类
@@ -70,6 +68,26 @@ public class UserServiceImpl extends BaseServiceImpl<UserMapper, User> implement
 	@Override
 	public IPage<User> selectUserPage(IPage<User> page, User user) {
 		return page.setRecords(baseMapper.selectUserPage(page, user));
+	}
+
+	@Override
+	public Map userLogin(String account, String password) {
+		User user = baseMapper.getUser("000000", account, DigestUtil.encrypt(password));
+		if (user == null) {
+			Map<String, Object> mapFail = new HashMap<>();
+			mapFail.put("realName", "");
+			mapFail.put("faceInformation", "");
+			mapFail.put("isLogin", false);
+			mapFail.put("msg", "用户名或密码错误");
+			return mapFail;
+		}
+		Map<String, Object> map = new HashMap<>();
+		map.put("realName", user.getRealName());
+		map.put("faceInformation", "");
+		map.put("isLogin", true);
+		// 成功
+		map.put("msg", 1);
+		return map;
 	}
 
 	@Override

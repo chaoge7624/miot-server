@@ -29,6 +29,17 @@ import org.springframework.stereotype.Component;
 @Component
 public class IUserClientFallback implements IUserClient {
 
+	/**
+	 * 用户登录校验
+	 * @param account
+	 * @param password
+	 * @return
+	 */
+	@Override
+	public R userLogin(String account, String password) {
+		return null;
+	}
+
 	@Override
 	public R<UserInfo> userInfo(Long userId) {
 		return R.fail("未获取到账号信息");

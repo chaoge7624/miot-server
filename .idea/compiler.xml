@@ -10,6 +10,7 @@
         <module name="blade-resource" />
         <module name="blade-auth" />
         <module name="blade-office" />
+        <module name="blade-benyuan-server" />
         <module name="blade-user" />
         <module name="blade-admin" />
         <module name="blade-scope-api" />
@@ -45,6 +46,7 @@
       <module name="blade-auth" options="-parameters" />
       <module name="blade-basics" options="" />
       <module name="blade-basics-api" options="" />
+      <module name="blade-benyuan-server" options="-parameters" />
       <module name="blade-common" options="-parameters" />
       <module name="blade-demo" options="-parameters" />
       <module name="blade-demo-api" options="-parameters" />

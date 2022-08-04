@@ -36,9 +36,21 @@ public class UserClient implements IUserClient {
 
 	private IUserService service;
 
+
 	@Override
 	public R<UserInfo> userInfo(Long userId) {
 		return R.data(service.userInfo(userId));
+	}
+
+	/**
+	 * 用户登录校验
+	 * @param account
+	 * @param password
+	 * @return
+	 */
+	@Override
+	public R userLogin(String account, String password) {
+		return R.data(service.userLogin(account, password));
 	}
 
 	@Override
