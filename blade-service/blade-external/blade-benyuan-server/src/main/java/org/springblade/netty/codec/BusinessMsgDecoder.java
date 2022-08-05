@@ -45,16 +45,21 @@ public class BusinessMsgDecoder extends ByteToMessageDecoder {
 			// 循环粘包处理
 			List<byte[]> resultByes = packageHandle(req);
 			for (byte[] resultBye : resultByes) {
+
+				// 协议码处理 万/十万位
+				byte codeByte3 = resultBye[NumberConstant.SIX];
+				int codeTenSix10000 = conversionNumberSix(codeByte3) * 10000;
+
 				// 协议码处理 百千位
 				byte codeByte2 = resultBye[NumberConstant.SEVEN];
 				int codeTenSix100 = conversionNumberSix(codeByte2) * 100;
 
-				// 个十位
+				// 协议码处理 个十位
 				byte codeByte = resultBye[NumberConstant.EIGHT];
 				int codeTenSix10 = conversionNumberSix(codeByte);
 
 				// code result
-				int codeTenSix = codeTenSix100 + codeTenSix10;
+				int codeTenSix = codeTenSix10000 + codeTenSix100 + codeTenSix10;
 
 				// 输出
 				System.out.println("消息请求协议码 = " + codeTenSix + " ------ 消息长度 = " + readableBytes);
@@ -125,7 +130,6 @@ public class BusinessMsgDecoder extends ByteToMessageDecoder {
 	 * @return
 	 */
 	private int conversionNumberSix(byte codeByte) {
-		// 有个小问题 请求码不能超过9999 先这样
 		String toHexCodeStr = Integer.toHexString(codeByte);
 		if (toHexCodeStr.contains("f")) {
 			toHexCodeStr = toHexCodeStr.substring(toHexCodeStr.length() - 2, toHexCodeStr.length());
