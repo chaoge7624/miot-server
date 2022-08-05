@@ -10,6 +10,11 @@
     <modelVersion>4.0.0</modelVersion>
     <name>${project.artifactId}</name>
     <version>3.4.1</version>
+    <modules>
+        <module>blade-lamp</module>
+        <module>blade-energy</module>
+        <module>blade-environment</module>
+    </modules>
     <packaging>pom</packaging>
     <description>设备运维管理</description>
     <artifactId>blade-device</artifactId>

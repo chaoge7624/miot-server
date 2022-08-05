@@ -3,22 +3,16 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>blade-service-api</artifactId>
+        <artifactId>blade-device-api</artifactId>
         <groupId>org.springblade</groupId>
         <version>3.4.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>blade-lamp-api</artifactId>
+
     <name>${project.artifactId}</name>
-    <version>3.4.1</version>
-    <modules>
-        <module>blade-lamp-api</module>
-        <module>blade-energy-api</module>
-        <module>blade-environment-api</module>
-    </modules>
-    <packaging>pom</packaging>
-    <description>设备运维管理API集合</description>
-    <artifactId>blade-device-api</artifactId>
-
-
+    <version>${blade.project.version}</version>
+    <packaging>jar</packaging>
 
 </project>

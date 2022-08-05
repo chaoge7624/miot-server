@@ -7,27 +7,33 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="blade-resource" />
         <module name="blade-auth" />
         <module name="blade-office" />
-        <module name="blade-benyuan-server" />
-        <module name="blade-user" />
+        <module name="blade-energy-api" />
+        <module name="blade-environment-api" />
         <module name="blade-admin" />
         <module name="blade-scope-api" />
-        <module name="blade-desk-api" />
         <module name="blade-user-api" />
-        <module name="blade-report" />
         <module name="blade-gateway" />
         <module name="blade-desk" />
-        <module name="blade-system" />
         <module name="blade-develop" />
-        <module name="blade-log" />
-        <module name="blade-dict-api" />
-        <module name="blade-system-api" />
         <module name="blade-common" />
         <module name="blade-task" />
         <module name="blade-swagger" />
         <module name="blade-office-api" />
+        <module name="blade-resource" />
+        <module name="blade-benyuan-server" />
+        <module name="blade-user" />
+        <module name="blade-lamp-api" />
+        <module name="blade-desk-api" />
+        <module name="blade-report" />
+        <module name="blade-lamp" />
+        <module name="blade-energy" />
+        <module name="blade-system" />
+        <module name="blade-log" />
+        <module name="blade-dict-api" />
+        <module name="blade-system-api" />
+        <module name="blade-environment" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -56,9 +62,15 @@
       <module name="blade-device" options="" />
       <module name="blade-device-api" options="" />
       <module name="blade-dict-api" options="-parameters" />
+      <module name="blade-energy" options="-parameters" />
+      <module name="blade-energy-api" options="-parameters" />
+      <module name="blade-environment" options="-parameters" />
+      <module name="blade-environment-api" options="-parameters" />
       <module name="blade-external" options="" />
       <module name="blade-external-api" options="" />
       <module name="blade-gateway" options="-parameters" />
+      <module name="blade-lamp" options="-parameters" />
+      <module name="blade-lamp-api" options="-parameters" />
       <module name="blade-log" options="-parameters" />
       <module name="blade-office" options="-parameters" />
       <module name="blade-office-api" options="-parameters" />
