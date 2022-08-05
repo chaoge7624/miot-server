@@ -22,6 +22,7 @@
         <module name="blade-swagger" />
         <module name="blade-office-api" />
         <module name="blade-resource" />
+        <module name="blade-modbus-client" />
         <module name="blade-benyuan-server" />
         <module name="blade-user" />
         <module name="blade-lamp-api" />
@@ -72,6 +73,7 @@
       <module name="blade-lamp" options="-parameters" />
       <module name="blade-lamp-api" options="-parameters" />
       <module name="blade-log" options="-parameters" />
+      <module name="blade-modbus-client" options="-parameters" />
       <module name="blade-office" options="-parameters" />
       <module name="blade-office-api" options="-parameters" />
       <module name="blade-ops" options="" />

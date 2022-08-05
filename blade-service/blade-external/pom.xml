@@ -12,6 +12,7 @@
     <version>3.4.1</version>
     <modules>
         <module>blade-benyuan-server</module>
+        <module>blade-modbus-client</module>
     </modules>
     <packaging>pom</packaging>
     <description>外部接口</description>
