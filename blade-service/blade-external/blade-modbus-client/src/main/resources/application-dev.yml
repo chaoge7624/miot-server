@@ -8,3 +8,10 @@ spring:
     url: ${blade.datasource.dev.url}
     username: ${blade.datasource.dev.username}
     password: ${blade.datasource.dev.password}
+  rabbitmq:
+    host: 192.168.247.184
+    port: 5672
+    username: admin
+    password: admin
+    virtual-host: /
+    connection-timeout: 5000
