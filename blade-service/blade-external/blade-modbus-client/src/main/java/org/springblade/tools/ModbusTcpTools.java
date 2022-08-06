@@ -18,7 +18,7 @@ import java.util.Map;
  * modbus处理器
  * @author 李家民
  */
-public class ModbusTools {
+public class ModbusTcpTools {
 
 	/** 工厂构建 */
 	private static ModbusFactory modbusFactory = new ModbusFactory();
@@ -40,6 +40,7 @@ public class ModbusTools {
 				modbusMasterMap.put(host, modbusMaster);
 
 				// 场景二：RTU 协议
+				// https://www.cnblogs.com/doubleflower/p/14718756.html
 				// modbusFactory.createRtuMaster(wapper);
 
 				// 场景三：UDP 协议
